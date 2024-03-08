@@ -12,10 +12,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 
-/**
- *
- * @author Jonathan
- */
+
 @Configuration
 public class ProjectConfig implements WebMvcConfigurer{
     //los soguientes metodos son para incorporar el tema de internalización en el proyecto
