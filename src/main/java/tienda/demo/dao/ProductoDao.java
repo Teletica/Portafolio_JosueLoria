@@ -12,7 +12,7 @@ import org.springframework.data.repository.query.Param;
 
 public interface ProductoDao extends JpaRepository<Producto, Long> {
     
-    
+    // Estos son consultas directas a la base de datos 
     //Ejemplo de método utilizando Métodos de Query
     public List<Producto> findByPrecioBetweenOrderByDescripcion(double precioInf, double precioSup);
 

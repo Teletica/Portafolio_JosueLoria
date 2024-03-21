@@ -10,12 +10,27 @@ import java.io.Serializable;
 import lombok.Data;
 
 
+/*
+  La notacion @Data es una extencion de Lombok que incluye metodos set y get
+  to string equals entre otros   
+*/
 @Data​
+/*
+  Esta anotación marca esta clase como una entidad de persistencia, 
+  lo que significa que está mapeada a una tabla en la base de datos. Cada instancia de esta clase 
+  representa una fila en la tabla rol.
+*/
 @Entity​
+/*
+ La anotacion Table hacereferencia a la tabla de la base de datos 
+*/
 @Table(name="producto")
 public class Producto implements Serializable {
     private static final long serialVersionUID = 1L;
-
+    /*
+      Esto hace referencia a la llave primaria de la base de datos por lo cual 
+      Se hara el llamado a la tabla rol sol con esta llave
+    */
     @Id​
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_producto")
