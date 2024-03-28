@@ -4,6 +4,7 @@
  */
 package tienda.demo.service;
 import org.springframework.security.core.userdetails.*;
+import tienda.demo.domain.Usuario;
 
 public interface UsuarioDetailsService {
     /*
@@ -11,5 +12,7 @@ public interface UsuarioDetailsService {
        Toma un nombre de usuario como argumento y devuelve un objeto UserDetails. Si el usuario no se encuentra, lanza una excepción UsernameNotFoundException. 
     */
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException;
+     // Se obtiene un listado de usuarios en un List
+    
     
 }
