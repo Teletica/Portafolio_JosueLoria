@@ -71,7 +71,7 @@ public class UsuarioServiceImpl implements UsuarioService{
     @Override
     @Transactional
     public void delete(Usuario usuario) {
-         usuarioDao.delete(usuario);
+        usuarioDao.delete(usuario);
     }
     
 }
